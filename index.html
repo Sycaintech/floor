@@ -652,17 +652,27 @@
         <p>We are a leading provider of high-quality industrial equipment, specializing in automation, machinery, and manufacturing solutions. With over 20 years of experience, we are committed to delivering innovative and reliable products to our clients worldwide.</p>
       </div>
 
-      <!-- Contact Us 卡片 -->
-      <div class="contact-card" id="contact">
-        <h2>Contact Us</h2>
-        <form>
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-          <textarea placeholder="Your Message" rows="5" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-    </div>
+<!-- Contact Us 卡片 -->
+<div class="contact-card" id="contact">
+  <h2>Contact Us</h2>
+  <form action="https://formspree.io/f/xjkkepoy" method="POST">
+    <!-- 输入字段 -->
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea> 
+
+    <!-- hCaptcha 验证 -->
+    <div class="h-captcha" data-sitekey="ac0cf7fe-4412-4332-b3e2-6ce244bc0408"></div>
+
+    <!-- 提交按钮 -->
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
+<!-- 引入 hCaptcha 的 JavaScript -->
+<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+
+</div>
   </section>
 
   <!-- 页脚 -->
